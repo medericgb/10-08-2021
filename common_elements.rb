@@ -1,6 +1,5 @@
 def common_elements(arr1, arr2)
-  new_array = arr1 & arr2
-  p new_array
+  p arr1 & arr2
 end
 
 common_elements([-1, 3, 4, 6, 7, 9], [1, 3]) # [3]
