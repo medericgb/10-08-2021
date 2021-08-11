@@ -1,12 +1,14 @@
 def move_to_end(arr, num)
-    # new_array = arr
-    # for i in arr
-    #     if i == num
-    #         u = arr.slice(arr.index(i), 1)
-    #         new_array.push(u.to_s)
-    #     end
-    # end
-    # p new_array
+    old_arr = Array.new
+    new_arr = Array.new
+    for i in arr
+        if i == num
+            new_arr.push(i)
+        else
+            old_arr.push(i)
+        end
+    end
+    p old_arr + new_arr
 end
 
 move_to_end([1, 3, 2, 4, 4, 1], 1) # [3, 2, 4, 4, 1, 1]
